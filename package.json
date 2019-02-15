@@ -1,0 +1,29 @@
+{
+  "name": "drudge-mqtt",
+  "version": "1.0.0",
+  "description": "Scrape Drudgereport and push new links to MQTT",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "./node_modules/.bin/nodemon"
+  },
+  "author": "",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.2",
+    "joi": "^14.3.1",
+    "mqtt": "^2.18.8",
+    "request": "^2.88.0",
+    "require-all": "^3.0.0",
+    "sqlite3": "^4.0.6",
+    "winston": "^3.2.1"
+  },
+  "devDependencies": {
+    "dotenv": "^6.2.0",
+    "nodemon": "^1.18.10"
+  },
+  "nodemonConfig": {
+    "ext": "*.js,*.json,*.env",
+    "exec": "node -r dotenv/config index.js dotenv_config_path=./.env"
+  }
+}
