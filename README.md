@@ -49,7 +49,11 @@ POLL_ON_INIT=true
 POLL_FREQUENCY=120 # seconds, min=60
 
 # Database/Persistence (sqlite)
-DB_PATH=""
+MYSQL_HOST=""
+MYSQL_PORT=3306
+MYSQL_USER=""
+MYSQL_PASSWORD=""
+MYSQL_DATABASE="drudge"
 
 # MQTT
 MQTT_URL=""
